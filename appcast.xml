@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>KeySwitch</title>
+        <item>
+            <title>0.2.0</title>
+            <pubDate>Thu, 05 Nov 2026 16:47:30 +0200</pubDate>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0-macos-universal.zip" length="2589083" type="application/octet-stream" sparkle:edSignature="FjjNZwdhueIzHqOSWbLh7R/sOb2T1GwCQ1bJ3LX9bVVh8mS+T10WO3uNmok6fllXsyyPL9chxY8xTyIAe/eoDg=="></enclosure>
+        </item>
+    </channel>
+</rss><!-- sparkle-signatures:
+edSignature: J01AJ8tBus0jtk7IlN1ZM7DcVGgTf/nJSE0UA8BkpFAPUze7Pd9p2uNIN5DX4T/fub6YOViQjN6oeHmWXjkVCA==
+length: 1120
+-->
