@@ -1,0 +1,5 @@
+# Binaries are attached to GitHub Releases, never committed.
+*.dmg
+*.zip
+*.app/
+.DS_Store

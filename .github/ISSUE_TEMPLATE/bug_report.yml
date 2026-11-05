@@ -1,0 +1,53 @@
+name: Bug report / דיווח על תקלה
+description: Something didn't convert, or KeySwitch misbehaved.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing the beta! **Please don't paste private text.** KeySwitch's diagnostics report never contains your text.
+        תודה על הבדיקה! אל תדביקו כאן טקסט פרטי. דוח האבחון של KeySwitch לא מכיל את הטקסט שלכם.
+  - type: input
+    id: version
+    attributes:
+      label: KeySwitch version
+      description: Settings → About
+      placeholder: 0.2.0 (16)
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: macOS 26.1
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: App or website
+      description: For example Chrome on google.com, Safari, Notes, Slack…
+    validations:
+      required: true
+  - type: dropdown
+    id: direction
+    attributes:
+      label: Direction
+      options: ["English letters → Hebrew", "Hebrew → English letters", "Both", "Not about conversion"]
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often?
+      options: ["Every time", "Sometimes", "Once"]
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics report (optional)
+      description: Settings → Advanced diagnostics → Copy Full Diagnostics Report, then paste here.
+      render: text

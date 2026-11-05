@@ -1,0 +1,14 @@
+name: Feature request / הצעה
+description: An idea to make KeySwitch better.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like KeySwitch to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help you?
