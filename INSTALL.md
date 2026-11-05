@@ -2,7 +2,7 @@
 
 ## Install
 
-1. Download **[KeySwitch-0.2.0.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg)** (KeySwitch Beta 2.0), or the DMG of any newer version from [Releases](../../releases). You don't need the `.zip` file: it's used by automatic updates.
+1. Download **[KeySwitch-0.2.1.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)** (KeySwitch Beta 2.1), or the DMG of any newer version from [Releases](../../releases). You don't need the `.zip` file: it's used by automatic updates.
    Optionally, check its checksum against `SHA256SUMS.txt` in the same release:
    ```bash
    shasum -a 256 ~/Downloads/KeySwitch-*.dmg
@@ -35,7 +35,7 @@ If KeySwitch stops converting text after a manual update from 0.1.x, macOS may n
 
 1. Menu bar icon → **Quit KeySwitch**.
 2. Drag **KeySwitch** from Applications to the Trash.
-3. Optionally remove its data:
+3. Optionally remove its data. If you turned on usage statistics, turn them off first (*Settings → Share usage statistics*): that also asks the server to delete them.
    ```bash
    rm -rf ~/Library/Application\ Support/org.keyswitch.KeySwitch
    defaults delete org.keyswitch.KeySwitch
@@ -58,7 +58,7 @@ If KeySwitch stops converting text after a manual update from 0.1.x, macOS may n
 ## עברית
 
 ### התקנה
-1. מורידים את **[KeySwitch-0.2.0.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg)** (KeySwitch Beta 2.0), או את ה־DMG של גרסה חדשה יותר מ־[Releases](../../releases). אין צורך בקובץ ה־`.zip`: הוא משמש את העדכונים האוטומטיים.
+1. מורידים את **[KeySwitch-0.2.1.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)** (KeySwitch Beta 2.1), או את ה־DMG של גרסה חדשה יותר מ־[Releases](../../releases). אין צורך בקובץ ה־`.zip`: הוא משמש את העדכונים האוטומטיים.
 2. פותחים את ה־DMG: מופיע חלון עם **KeySwitch** ותיקיית **Applications**.
 3. גוררים את **KeySwitch** אל **Applications**.
 4. מוציאים את ה־DMG ופותחים את **KeySwitch** מתיקיית היישומים. ייתכן ש־macOS יבקש אישור לפתיחת אפליקציה שהורדה מהאינטרנט. KeySwitch חתומה ב־Developer ID ועברה נוטריזציה של Apple.
@@ -75,6 +75,6 @@ If KeySwitch stops converting text after a manual update from 0.1.x, macOS may n
 מגיעים מגרסה ישנה בלי עדכון אוטומטי? מורידים פעם אחת את ה־DMG החדש, גוררים אל Applications ובוחרים **החלפה**. אם אחרי שדרוג ידני מ־0.1.x ההמרה הפסיקה לעבוד: בהגדרות המערכת ← פרטיות ואבטחה ← נגישות, מסירים את KeySwitch עם **−**, פותחים אותה שוב ועוברים על המדריך.
 
 ### הסרה
-יוצאים מ־KeySwitch (סמל שורת התפריטים ← יציאה), גוררים את האפליקציה לפח, ואם רוצים מוחקים גם את הנתונים בעזרת שתי הפקודות שבחלק האנגלי למעלה.
+יוצאים מ־KeySwitch (סמל שורת התפריטים ← יציאה), גוררים את האפליקציה לפח, ואם רוצים מוחקים גם את הנתונים בעזרת שתי הפקודות שבחלק האנגלי למעלה. אם הפעלתם סטטיסטיקות שימוש, כבו אותן קודם (הגדרות ← שיתוף סטטיסטיקות שימוש): הכיבוי מבקש גם מהשרת למחוק אותן.
 
 </div>

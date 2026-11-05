@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg"><b>⬇️ Download KeySwitch Beta 2.0 for Mac (DMG)</b></a><br>
+  <a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg"><b>⬇️ Download KeySwitch Beta 2.1 for Mac (DMG)</b></a><br>
   <sub>macOS 13 or later · Apple Silicon and Intel · signed and notarized by Apple · updates itself automatically</sub>
 </p>
 
@@ -42,7 +42,7 @@ You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong
 - **Menu bar only:** a small ⇄ icon in the menu bar, no Dock icon, no windows in your way.
 - **Your shortcut:** ⇧⌘J by default, and you can change it.
 - **Hebrew and English interface**, with full right-to-left support.
-- **Private by design:** everything happens on your Mac. No analytics, no account. The only network request is a daily update check on GitHub, which you can turn off.
+- **Private by design:** everything happens on your Mac, and your text never leaves it. No account. The only network requests are a daily update check on GitHub, which you can turn off, and anonymous usage statistics **only if you turn them on** (off by default; counts only, never text).
 
 ## Requirements
 
@@ -52,7 +52,7 @@ You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong
 
 ## Install
 
-1. **[Download KeySwitch-0.2.0.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg)** (KeySwitch Beta 2.0).
+1. **[Download KeySwitch-0.2.1.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)** (KeySwitch Beta 2.1).
    The release also lists a `.zip` file: you don't need it. It's what KeySwitch's automatic updates download.
 2. Open the DMG and drag **KeySwitch** onto **Applications**.
 3. Open KeySwitch from Applications. The welcome guide starts automatically.
@@ -92,7 +92,7 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 
 **KeySwitch מתקנת טקסט שהוקלד בפריסת המקלדת הלא נכונה, בין עברית לאנגלית, במקום ובלחיצת קיצור אחת.**
 
-<p align="center"><a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg"><b>⬇️ הורדת KeySwitch Beta 2.0 ל־Mac ‏(DMG)</b></a></p>
+<p align="center"><a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg"><b>⬇️ הורדת KeySwitch Beta 2.1 ל־Mac ‏(DMG)</b></a></p>
 
 הקלדתם `akuo` כשהתכוונתם ל־`שלום`? מסמנים את הטקסט, לוחצים <bdi>⇧⌘J</bdi>, והטקסט מומר לפריסה הנכונה בדיוק במקום שבו הוא נמצא. לחיצה נוספת מחזירה אותו.
 
@@ -104,7 +104,7 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 </p>
 
 ### התקנה
-1. **[מורידים את KeySwitch-0.2.0.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg)** (KeySwitch Beta 2.0). קובץ ה־`.zip` שבעמוד הגרסה מיועד לעדכונים האוטומטיים, ואין צורך להוריד אותו.
+1. **[מורידים את KeySwitch-0.2.1.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)** (KeySwitch Beta 2.1). קובץ ה־`.zip` שבעמוד הגרסה מיועד לעדכונים האוטומטיים, ואין צורך להוריד אותו.
 2. פותחים את ה־DMG וגוררים את **KeySwitch** אל **Applications**.
 3. פותחים את KeySwitch מתיקיית היישומים. מדריך הפתיחה מתחיל לבד.
 4. מאשרים **הרשאת נגישות** לפי ההנחיות במדריך.
@@ -112,7 +112,7 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 הוראות מלאות: [INSTALL.md](INSTALL.md#עברית).
 
 ### פרטיות
-הכול קורה במחשב שלכם: אין איסוף נתונים ואין חשבון. הבקשה היחידה לרשת היא בדיקת עדכונים יומית ב־GitHub, ואפשר לכבות אותה. היסטוריית ההמרות כבויה כברירת מחדל. פרטים מלאים: [PRIVACY.md](PRIVACY.md).
+הכול קורה במחשב שלכם, והטקסט שלכם לא יוצא ממנו. אין חשבון. הבקשות לרשת הן בדיקת עדכונים יומית ב־GitHub, שאפשר לכבות, וסטטיסטיקות שימוש אנונימיות **רק אם מפעילים אותן** (כבויות כברירת מחדל; רק מונים, אף פעם לא טקסט). היסטוריית ההמרות כבויה כברירת מחדל. פרטים מלאים: [PRIVACY.md](PRIVACY.md).
 
 אם KeySwitch עוזרת לכם, נשמח ל־⭐ במאגר: כך עוד אנשים שמקלידים בעברית ובאנגלית ימצאו אותה.
 
