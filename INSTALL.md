@@ -2,7 +2,7 @@
 
 ## Install
 
-1. Download **`KeySwitch-x.y.z.dmg`** from the [latest release](../../releases).
+1. Download **[KeySwitch-0.2.0.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg)** (KeySwitch Beta 2.0), or the DMG of any newer version from [Releases](../../releases). You don't need the `.zip` file: it's used by automatic updates.
    Optionally, check its checksum against `SHA256SUMS.txt` in the same release:
    ```bash
    shasum -a 256 ~/Downloads/KeySwitch-*.dmg
@@ -58,7 +58,7 @@ If KeySwitch stops converting text after a manual update from 0.1.x, macOS may n
 ## עברית
 
 ### התקנה
-1. מורידים את **`KeySwitch-x.y.z.dmg`** מ־[הגרסה האחרונה](../../releases).
+1. מורידים את **[KeySwitch-0.2.0.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg)** (KeySwitch Beta 2.0), או את ה־DMG של גרסה חדשה יותר מ־[Releases](../../releases). אין צורך בקובץ ה־`.zip`: הוא משמש את העדכונים האוטומטיים.
 2. פותחים את ה־DMG: מופיע חלון עם **KeySwitch** ותיקיית **Applications**.
 3. גוררים את **KeySwitch** אל **Applications**.
 4. מוציאים את ה־DMG ופותחים את **KeySwitch** מתיקיית היישומים. ייתכן ש־macOS יבקש אישור לפתיחת אפליקציה שהורדה מהאינטרנט. KeySwitch חתומה ב־Developer ID ועברה נוטריזציה של Apple.

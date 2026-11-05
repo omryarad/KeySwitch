@@ -10,7 +10,12 @@
 </p>
 
 <p align="center">
-  <a href="../../releases">Download the latest beta</a> ·
+  <a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg"><b>⬇️ Download KeySwitch Beta 2.0 for Mac (DMG)</b></a><br>
+  <sub>macOS 13 or later · Apple Silicon and Intel · signed and notarized by Apple · updates itself automatically</sub>
+</p>
+
+<p align="center">
+  <a href="../../releases">All releases</a> ·
   <a href="INSTALL.md">Installation</a> ·
   <a href="PRIVACY.md">Privacy</a> ·
   <a href="../../issues/new/choose">Report a problem</a> ·
@@ -18,6 +23,8 @@
 </p>
 
 > **Experimental beta.** KeySwitch works well in most apps, but replacement is not yet 100% reliable in some web page text fields in Chrome (for example the Google and YouTube search boxes). See [Known limitations](#known-limitations).
+
+If KeySwitch helps you, please ⭐ **star this repository**. It helps other Hebrew/English typists find it.
 
 ---
 
@@ -45,7 +52,8 @@ You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong
 
 ## Install
 
-1. Download **`KeySwitch-x.y.z.dmg`** from [Releases](../../releases).
+1. **[Download KeySwitch-0.2.0.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg)** (KeySwitch Beta 2.0).
+   The release also lists a `.zip` file: you don't need it. It's what KeySwitch's automatic updates download.
 2. Open the DMG and drag **KeySwitch** onto **Applications**.
 3. Open KeySwitch from Applications. The welcome guide starts automatically.
 4. Follow the guide to allow **Accessibility** access (System Settings → Privacy & Security → Accessibility).
@@ -70,7 +78,7 @@ This is a beta, and your reports shape it.
 - **Ideas:** [request a feature](../../issues/new?template=feature_request.yml).
 - **Security issues:** please report them privately, see [SECURITY.md](SECURITY.md).
 
-If KeySwitch saves you some typing, a ⭐ helps others find it.
+If KeySwitch saves you some typing, a ⭐ star helps others find it. Thank you!
 
 ## License
 
@@ -84,6 +92,8 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 
 **KeySwitch מתקנת טקסט שהוקלד בפריסת המקלדת הלא נכונה, בין עברית לאנגלית, במקום ובלחיצת קיצור אחת.**
 
+<p align="center"><a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg"><b>⬇️ הורדת KeySwitch Beta 2.0 ל־Mac ‏(DMG)</b></a></p>
+
 הקלדתם `akuo` כשהתכוונתם ל־`שלום`? מסמנים את הטקסט, לוחצים <bdi>⇧⌘J</bdi>, והטקסט מומר לפריסה הנכונה בדיוק במקום שבו הוא נמצא. לחיצה נוספת מחזירה אותו.
 
 > **גרסת בטא ניסיונית.** ברוב האפליקציות ההמרה עובדת היטב, אבל בחלק משדות הטקסט בדפי אינטרנט ב־Chrome (למשל תיבות החיפוש של Google ו־YouTube) היא עדיין לא אמינה ב־100%. שורת הכתובת של Chrome עובדת.
@@ -94,7 +104,7 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 </p>
 
 ### התקנה
-1. מורידים את **`KeySwitch-x.y.z.dmg`** מ־[Releases](../../releases).
+1. **[מורידים את KeySwitch-0.2.0.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.0-beta.2/KeySwitch-0.2.0.dmg)** (KeySwitch Beta 2.0). קובץ ה־`.zip` שבעמוד הגרסה מיועד לעדכונים האוטומטיים, ואין צורך להוריד אותו.
 2. פותחים את ה־DMG וגוררים את **KeySwitch** אל **Applications**.
 3. פותחים את KeySwitch מתיקיית היישומים. מדריך הפתיחה מתחיל לבד.
 4. מאשרים **הרשאת נגישות** לפי ההנחיות במדריך.
@@ -103,6 +113,8 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 
 ### פרטיות
 הכול קורה במחשב שלכם: אין איסוף נתונים ואין חשבון. הבקשה היחידה לרשת היא בדיקת עדכונים יומית ב־GitHub, ואפשר לכבות אותה. היסטוריית ההמרות כבויה כברירת מחדל. פרטים מלאים: [PRIVACY.md](PRIVACY.md).
+
+אם KeySwitch עוזרת לכם, נשמח ל־⭐ במאגר: כך עוד אנשים שמקלידים בעברית ובאנגלית ימצאו אותה.
 
 ### דיווח על בעיה
 [פתחו דיווח](../../issues/new/choose), וציינו באיזו אפליקציה או אתר זה קרה. אפשר לצרף את דוח האבחון מתוך *הגדרות ← אבחון מתקדם ← העתק דוח אבחון*. הדוח לא מכיל את הטקסט שלכם.
