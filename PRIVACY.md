@@ -38,7 +38,7 @@ The maintainer may look at GitHub's public download counters for each release (h
 
 ## Usage statistics (a condition of use)
 
-From version 0.2.1, using KeySwitch includes sending usage statistics, which show whether conversion works, where it fails and how many people use it. **This is a condition of using KeySwitch.** At first launch, and on the first launch after updating from Beta 2.0, KeySwitch shows a screen in Hebrew and English that explains what is sent, with two choices: *Agree and Continue* or *Quit KeySwitch*. Until you agree, nothing is collected or sent, no identifier exists, and the shortcut is not turned on. If you do not agree, KeySwitch quits and you cannot use it. There is no setting to keep using KeySwitch with statistics off. *Settings → What Is Sent…* shows the exact data waiting to be sent.
+From version 0.2.1, using KeySwitch includes sending usage statistics, which show whether conversion works, where it fails and how many people use it. **This is a condition of using KeySwitch.** At first launch, and on the first launch after updating from Beta 2.0, KeySwitch shows a short consent screen (Hebrew or English) linking to the [Terms of Use](TERMS.md) and this policy, with two choices: *Agree and Continue* or *Quit KeySwitch*. Closing the screen quits. The full details are in this policy and in *Settings → Privacy*. Until you agree, nothing is collected or sent, no identifier exists, and the shortcut is not turned on. If you do not agree, KeySwitch quits and you cannot use it. There is no setting to keep using KeySwitch with statistics off. *Settings → Privacy → What Is Sent…* shows the exact data waiting to be sent.
 
 | What | Details |
 |---|---|
@@ -48,12 +48,12 @@ From version 0.2.1, using KeySwitch includes sending usage statistics, which sho
 | When | At most once an hour, in the background. Sending never delays or affects a conversion. If you are offline, up to 35 days are kept on your Mac (`~/Library/Application Support/org.keyswitch.KeySwitch/telemetry.json`, readable only by your account) and sent later. Older days are dropped. |
 | Where | A server run by KeySwitch's developer on Cloudflare Workers (a hosting provider), over HTTPS. The database is in Cloudflare's European region. Cloudflare processes your IP address to deliver the request. KeySwitch's server does not store IP addresses and keeps no request logs. Cloudflare's own privacy policy covers its processing. |
 | Retention | Statistics are deleted after 400 days. |
-| Deleting your data | *Settings → Delete Statistics and Quit…*. This immediately deletes the ID and the queued data on your Mac, asks the server to delete everything stored for that ID, and quits KeySwitch (it cannot be used without statistics). If your Mac is offline at that moment, KeySwitch repeats the request the next time it starts, until the server confirms it. Using KeySwitch again shows the agreement screen and creates a new, unrelated ID. |
+| Deleting your data | *Settings → Privacy → Delete Statistics and Quit…*. This immediately deletes the ID and the queued data on your Mac, asks the server to delete everything stored for that ID, and quits KeySwitch (it cannot be used without statistics). If your Mac is offline at that moment, KeySwitch repeats the request the next time it starts, until the server confirms it. Using KeySwitch again shows the agreement screen and creates a new, unrelated ID. |
 | Who sees it | Only the developer, through a private dashboard behind sign-in. Statistics are not sold or shared. Aggregated totals (for example "N active installations") may be published. |
 
 ### Who is responsible, and your rights
 
-KeySwitch is developed and operated by Omry Arad, who decides what is collected and why. Under Israel's Protection of Privacy Law you may ask to see the information held about your installation and to have it corrected or deleted. Because the server knows only a hashed random ID, include the ID shown in *What Is Sent…* in your request. Requests and questions: **omry@taskirim.com**. You will get an answer within 30 days.
+KeySwitch is developed and operated by Omry Arad, who decides what is collected and why. Under Israel's Protection of Privacy Law you may ask to see the information held about your installation and to have it corrected or deleted. Because the server knows only a hashed random ID, include the ID shown in *Settings → Privacy → What Is Sent…* in your request. Requests and questions: **omry@taskirim.com**. You will get an answer within 30 days.
 
 ## Data stored on your Mac
 
@@ -62,7 +62,7 @@ KeySwitch is developed and operated by Omry Arad, who decides what is collected 
 | Settings: language, shortcut, options, whether the guide was completed | `~/Library/Preferences/org.keyswitch.KeySwitch.plist` | Always |
 | **Conversion history**: original and converted text, time, and whether it was confirmed | `~/Library/Application Support/org.keyswitch.KeySwitch/history.json`. Plain JSON readable only by your user account. It is included in Time Machine backups. | **Off.** You must turn it on and confirm. Turning it off, or choosing *Delete all history*, deletes the file. Copies in existing backups remain. |
 | Update state: time of the last check, your *Update Automatically* choice, and a downloaded update until it is installed | The preferences file above, and `~/Library/Caches/org.keyswitch.KeySwitch` | Always (when updates are on) |
-| Usage statistics queue: daily counts and the random ID | `~/Library/Application Support/org.keyswitch.KeySwitch/telemetry.json`, readable only by your account | Created when you agree at first launch. Deleted by *Delete Statistics and Quit…*. |
+| Usage statistics queue: daily counts and the random ID | `~/Library/Application Support/org.keyswitch.KeySwitch/telemetry.json`, readable only by your account | Created when you agree at first launch. Deleted by *Settings → Privacy → Delete Statistics and Quit…*. |
 | Diagnostics for the last 20 attempts | Memory only. Cleared when KeySwitch quits or when you choose *Clear*. | Always (in memory) |
 
 History skips fields marked as secure and known password-manager apps. Apps don't always mark sensitive fields, so if you type sensitive text, keep history off.
