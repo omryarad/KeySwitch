@@ -1,6 +1,6 @@
 # Changelog
 
-## KeySwitch Beta 2.1 (0.2.1, build 20)
+## KeySwitch Beta 2.1 (0.2.1, build 21)
 
 Tag `v0.2.1-beta`.
 
