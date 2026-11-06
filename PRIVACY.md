@@ -53,7 +53,7 @@ From version 0.2.1, using KeySwitch includes sending usage statistics, which sho
 
 ### Who is responsible, and your rights
 
-KeySwitch is developed and operated by Omry Arad, who decides what is collected and why. Under Israel's Protection of Privacy Law you may ask to see the information held about your installation and to have it corrected or deleted. Because the server knows only a hashed random ID, include the ID shown in *What Is Sent…* in your request. Requests and questions: through the private channel described in [SECURITY.md](SECURITY.md), or a GitHub issue for anything that is not sensitive.
+KeySwitch is developed and operated by Omry Arad, who decides what is collected and why. Under Israel's Protection of Privacy Law you may ask to see the information held about your installation and to have it corrected or deleted. Because the server knows only a hashed random ID, include the ID shown in *What Is Sent…* in your request. Requests and questions: **omry@taskirim.com**. You will get an answer within 30 days.
 
 ## Data stored on your Mac
 
@@ -85,4 +85,4 @@ KeySwitch asks for one permission: **Accessibility**. It has no entitlements, us
 
 ## Contact
 
-Questions about privacy: open an issue in this repository. For anything sensitive, use the private reporting described in [SECURITY.md](SECURITY.md).
+Privacy questions and requests (access, correction, deletion): **omry@taskirim.com**. Security vulnerabilities: the private reporting described in [SECURITY.md](SECURITY.md).
