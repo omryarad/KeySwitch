@@ -2,7 +2,7 @@
 
 **KeySwitch Beta 2.1 (version 0.2.1) and later. Last updated: November 2026.**
 
-These terms apply to your use of KeySwitch, a macOS app developed by Omry Arad ("the developer"). By clicking **Agree and Continue** in KeySwitch you accept these terms and the [Privacy Policy](PRIVACY.md). If you do not accept them, choose **Quit KeySwitch** and do not use the app.
+These terms apply to your use of KeySwitch, a macOS app ("KeySwitch"; its developer: "the developer"). By clicking **Agree and Continue** in KeySwitch you accept these terms and the [Privacy Policy](PRIVACY.md). If you do not accept them, choose **Quit KeySwitch** and do not use the app.
 
 1. **Intended users.** This version is intended for users in Israel.
 2. **Usage statistics are a condition of use.** Using KeySwitch includes the collection of usage statistics as described in the [Privacy Policy](PRIVACY.md#usage-statistics-a-condition-of-use): a random, persistent installation identifier, versions, and daily counts of conversions, their outcomes and failure categories. This data is pseudonymous, not anonymous. KeySwitch never collects the text you type, select or convert, clipboard content, URLs, window titles or document content. KeySwitch cannot be used with statistics turned off.
@@ -22,7 +22,7 @@ These terms apply to your use of KeySwitch, a macOS app developed by Omry Arad (
 
 **KeySwitch Beta 2.1 (גרסה 0.2.1) ואילך. עדכון אחרון: נובמבר 2026.**
 
-תנאים אלה חלים על השימוש ב־KeySwitch, אפליקציה ל־macOS שפותחה בידי עמרי ארד ("המפתח"). לחיצה על **מסכים וממשיך** ב־KeySwitch היא הסכמה לתנאים אלה ול[מדיניות הפרטיות](PRIVACY.md). מי שאינו מסכים יבחר **יציאה מ־KeySwitch** ולא ישתמש באפליקציה.
+תנאים אלה חלים על השימוש ב־KeySwitch, אפליקציה ל־macOS (להלן: "המפתח" — מפתח KeySwitch). לחיצה על **מסכים וממשיך** ב־KeySwitch היא הסכמה לתנאים אלה ול[מדיניות הפרטיות](PRIVACY.md). מי שאינו מסכים יבחר **יציאה מ־KeySwitch** ולא ישתמש באפליקציה.
 
 1. **למי מיועדת.** גרסה זו מיועדת למשתמשים בישראל.
 2. **סטטיסטיקות שימוש הן תנאי לשימוש.** השימוש ב־KeySwitch כולל איסוף סטטיסטיקות שימוש כמתואר ב[מדיניות הפרטיות](PRIVACY.md#usage-statistics-a-condition-of-use):
