@@ -18,6 +18,7 @@
   <a href="../../releases">All releases</a> ·
   <a href="INSTALL.md">Installation</a> ·
   <a href="PRIVACY.md">Privacy</a> ·
+  <a href="TERMS.md">Terms</a> ·
   <a href="../../issues/new/choose">Report a problem</a> ·
   <a href="#עברית">עברית</a>
 </p>
@@ -30,7 +31,7 @@ If KeySwitch helps you, please ⭐ **star this repository**. It helps other Hebr
 
 ## What it does
 
-You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong language. Select the text, press **⇧⌘J**, and KeySwitch converts it to the right layout, right where it is. Press again to convert it back.
+You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong language. Select the text, press **⇧⌘J**, and KeySwitch converts it to the right layout, right where it is. The cursor lands right after the converted text, and the keyboard switches to the matching language, so you can keep typing.
 
 <p align="center">
   <img src="screenshots/onboarding-en-1-welcome.png" width="420" alt="KeySwitch welcome screen">
@@ -40,6 +41,7 @@ You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong
 - **Both directions:** English letters typed on a Hebrew layout, and Hebrew typed on an English layout.
 - **Works where you type:** native apps such as Notes, Mail and TextEdit, browsers, and chat apps.
 - **Menu bar only:** a small ⇄ icon in the menu bar, no Dock icon, no windows in your way.
+- **Keep typing:** after a conversion the cursor sits after the text and the keyboard switches to its language (*Settings → Automatically switch keyboard language*, on by default).
 - **Your shortcut:** ⇧⌘J by default, and you can change it.
 - **Hebrew and English interface**, with full right-to-left support.
 - **Private by design:** everything happens on your Mac, and your text never leaves it. No account. The only network requests are a daily update check on GitHub, which you can turn off, and usage statistics: counts and a random installation ID, never text. Using KeySwitch requires agreeing to them on a screen shown before anything is collected.
@@ -55,7 +57,7 @@ You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong
 1. **[Download KeySwitch-0.2.1.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)** (KeySwitch Beta 2.1).
    The release also lists a `.zip` file: you don't need it. It's what KeySwitch's automatic updates download.
 2. Open the DMG and drag **KeySwitch** onto **Applications**.
-3. Open KeySwitch from Applications. The welcome guide starts automatically.
+3. Open KeySwitch from Applications. Agree to the [Terms of Use](TERMS.md) and [Privacy Policy](PRIVACY.md) (or quit), and the welcome guide starts.
 4. Follow the guide to allow **Accessibility** access (System Settings → Privacy & Security → Accessibility).
 
 Full instructions, updating and uninstalling: [INSTALL.md](INSTALL.md).
@@ -94,7 +96,7 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 
 <p align="center"><a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg"><b>⬇️ הורדת KeySwitch Beta 2.1 ל־Mac ‏(DMG)</b></a></p>
 
-הקלדתם `akuo` כשהתכוונתם ל־`שלום`? מסמנים את הטקסט, לוחצים <bdi>⇧⌘J</bdi>, והטקסט מומר לפריסה הנכונה בדיוק במקום שבו הוא נמצא. לחיצה נוספת מחזירה אותו.
+הקלדתם `akuo` כשהתכוונתם ל־`שלום`? מסמנים את הטקסט, לוחצים <bdi>⇧⌘J</bdi>, והטקסט מומר לפריסה הנכונה בדיוק במקום שבו הוא נמצא. הסמן עומד מיד אחרי הטקסט המומר, והמקלדת עוברת לשפה שלו, כך שאפשר להמשיך להקליד.
 
 > **גרסת בטא ניסיונית.** ברוב האפליקציות ההמרה עובדת היטב, אבל בחלק משדות הטקסט בדפי אינטרנט ב־Chrome (למשל תיבות החיפוש של Google ו־YouTube) היא עדיין לא אמינה ב־100%. שורת הכתובת של Chrome עובדת.
 
@@ -106,7 +108,7 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 ### התקנה
 1. **[מורידים את KeySwitch-0.2.1.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)** (KeySwitch Beta 2.1). קובץ ה־`.zip` שבעמוד הגרסה מיועד לעדכונים האוטומטיים, ואין צורך להוריד אותו.
 2. פותחים את ה־DMG וגוררים את **KeySwitch** אל **Applications**.
-3. פותחים את KeySwitch מתיקיית היישומים. מדריך הפתיחה מתחיל לבד.
+3. פותחים את KeySwitch מתיקיית היישומים, מאשרים את [תנאי השימוש](TERMS.md#תנאי-שימוש) ואת [מדיניות הפרטיות](PRIVACY.md) (או יוצאים), ומדריך הפתיחה מתחיל.
 4. מאשרים **הרשאת נגישות** לפי ההנחיות במדריך.
 
 הוראות מלאות: [INSTALL.md](INSTALL.md#עברית).

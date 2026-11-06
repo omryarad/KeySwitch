@@ -2,7 +2,7 @@
 
 **Short version:** KeySwitch works entirely on your Mac. Your text never leaves it. Its network requests are a daily check for updates on GitHub (you can turn it off) and **usage statistics**: counts and a random installation ID, never text. Using KeySwitch requires agreeing to the statistics, on a screen shown before anything is collected. Conversion history is off unless you turn it on.
 
-This statement describes KeySwitch from version 0.2.1 (build 19, the first version with usage statistics). KeySwitch Beta 2.1 is intended for users in Israel. Build 18 has the update check only; build 17 and earlier have no network code at all. It was written from a review of the app's source code, not as a marketing summary. If a future version changes any of this, this page will change with it.
+This statement describes KeySwitch from version 0.2.1 (build 20, the first version with usage statistics). KeySwitch Beta 2.1 is intended for users in Israel. Build 18 has the update check only; build 17 and earlier have no network code at all. It was written from a review of the app's source code, not as a marketing summary. If a future version changes any of this, this page will change with it.
 
 ## What KeySwitch accesses, and when
 
