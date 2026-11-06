@@ -44,7 +44,7 @@ You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong
 - **Keep typing:** after a conversion the cursor sits after the text and the keyboard switches to its language (*Settings → Automatically switch keyboard language*, on by default).
 - **Your shortcut:** ⇧⌘J by default, and you can change it.
 - **Hebrew and English interface**, with full right-to-left support.
-- **Private by design:** everything happens on your Mac, and your text never leaves it. No account. The only network requests are a daily update check on GitHub, which you can turn off, and usage statistics: counts and a random installation ID, never text. Using KeySwitch requires agreeing to them on a screen shown before anything is collected.
+- **Private by design:** everything happens on your Mac, and your text never leaves it. No account. The only network requests are a daily update check on GitHub, which you can turn off, and usage statistics: counts and a random installation ID, never text. They are on by default after a short notice, and you can turn them off anytime in Settings → Privacy.
 
 ## Requirements
 
@@ -57,7 +57,7 @@ You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong
 1. **[Download KeySwitch-0.2.1.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)** (KeySwitch Beta 2.1).
    The release also lists a `.zip` file: you don't need it. It's what KeySwitch's automatic updates download.
 2. Open the DMG and drag **KeySwitch** onto **Applications**.
-3. Open KeySwitch from Applications. Agree to the [Terms of Use](TERMS.md) and [Privacy Policy](PRIVACY.md) (or quit), and the welcome guide starts.
+3. Open KeySwitch from Applications. A short note explains the usage statistics ([details](PRIVACY.md#usage-statistics)), then the welcome guide starts.
 4. Follow the guide to allow **Accessibility** access (System Settings → Privacy & Security → Accessibility).
 
 Full instructions, updating and uninstalling: [INSTALL.md](INSTALL.md).
@@ -108,13 +108,13 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 ### התקנה
 1. **[מורידים את KeySwitch-0.2.1.dmg](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)** (KeySwitch Beta 2.1). קובץ ה־`.zip` שבעמוד הגרסה מיועד לעדכונים האוטומטיים, ואין צורך להוריד אותו.
 2. פותחים את ה־DMG וגוררים את **KeySwitch** אל **Applications**.
-3. פותחים את KeySwitch מתיקיית היישומים, מאשרים את [תנאי השימוש](TERMS.md#תנאי-שימוש) ואת [מדיניות הפרטיות](PRIVACY.md) (או יוצאים), ומדריך הפתיחה מתחיל.
+3. פותחים את KeySwitch מתיקיית היישומים. הודעה קצרה מסבירה על סטטיסטיקות השימוש ([פרטים](PRIVACY.md#usage-statistics)), ואז מדריך הפתיחה מתחיל.
 4. מאשרים **הרשאת נגישות** לפי ההנחיות במדריך.
 
 הוראות מלאות: [INSTALL.md](INSTALL.md#עברית).
 
 ### פרטיות
-הכול קורה במחשב שלכם, והטקסט שלכם לא יוצא ממנו. אין חשבון. הבקשות לרשת הן בדיקת עדכונים יומית ב־GitHub, שאפשר לכבות, וסטטיסטיקות שימוש: מונים ומזהה התקנה אקראי, אף פעם לא טקסט. השימוש ב־KeySwitch מותנה בהסכמה להן, במסך שמוצג לפני שנאסף משהו. היסטוריית ההמרות כבויה כברירת מחדל. פרטים מלאים: [PRIVACY.md](PRIVACY.md).
+הכול קורה במחשב שלכם, והטקסט שלכם לא יוצא ממנו. אין חשבון. הבקשות לרשת הן בדיקת עדכונים יומית ב־GitHub, שאפשר לכבות, וסטטיסטיקות שימוש: מונים ומזהה התקנה אקראי, אף פעם לא טקסט. הן מופעלות כברירת מחדל אחרי הודעה קצרה, ואפשר לכבות אותן בכל עת בהגדרות ← פרטיות. היסטוריית ההמרות כבויה כברירת מחדל. פרטים מלאים: [PRIVACY.md](PRIVACY.md).
 
 אם KeySwitch עוזרת לכם, נשמח ל־⭐ במאגר: כך עוד אנשים שמקלידים בעברית ובאנגלית ימצאו אותה.
 
