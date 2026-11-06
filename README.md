@@ -42,7 +42,7 @@ You typed `akuo` but meant `שלום`, because the keyboard was set to the wrong
 - **Menu bar only:** a small ⇄ icon in the menu bar, no Dock icon, no windows in your way.
 - **Your shortcut:** ⇧⌘J by default, and you can change it.
 - **Hebrew and English interface**, with full right-to-left support.
-- **Private by design:** everything happens on your Mac, and your text never leaves it. No account. The only network requests are a daily update check on GitHub, which you can turn off, and anonymous usage statistics **only if you turn them on** (off by default; counts only, never text).
+- **Private by design:** everything happens on your Mac, and your text never leaves it. No account. The only network requests are a daily update check on GitHub, which you can turn off, and usage statistics: counts and a random installation ID, never text. Using KeySwitch requires agreeing to them on a screen shown before anything is collected.
 
 ## Requirements
 
@@ -112,7 +112,7 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 הוראות מלאות: [INSTALL.md](INSTALL.md#עברית).
 
 ### פרטיות
-הכול קורה במחשב שלכם, והטקסט שלכם לא יוצא ממנו. אין חשבון. הבקשות לרשת הן בדיקת עדכונים יומית ב־GitHub, שאפשר לכבות, וסטטיסטיקות שימוש אנונימיות **רק אם מפעילים אותן** (כבויות כברירת מחדל; רק מונים, אף פעם לא טקסט). היסטוריית ההמרות כבויה כברירת מחדל. פרטים מלאים: [PRIVACY.md](PRIVACY.md).
+הכול קורה במחשב שלכם, והטקסט שלכם לא יוצא ממנו. אין חשבון. הבקשות לרשת הן בדיקת עדכונים יומית ב־GitHub, שאפשר לכבות, וסטטיסטיקות שימוש: מונים ומזהה התקנה אקראי, אף פעם לא טקסט. השימוש ב־KeySwitch מותנה בהסכמה להן, במסך שמוצג לפני שנאסף משהו. היסטוריית ההמרות כבויה כברירת מחדל. פרטים מלאים: [PRIVACY.md](PRIVACY.md).
 
 אם KeySwitch עוזרת לכם, נשמח ל־⭐ במאגר: כך עוד אנשים שמקלידים בעברית ובאנגלית ימצאו אותה.
 

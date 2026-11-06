@@ -35,7 +35,7 @@ If KeySwitch stops converting text after a manual update from 0.1.x, macOS may n
 
 1. Menu bar icon → **Quit KeySwitch**.
 2. Drag **KeySwitch** from Applications to the Trash.
-3. Optionally remove its data. If you turned on usage statistics, turn them off first (*Settings → Share usage statistics*): that also asks the server to delete them.
+3. Optionally remove its data. To delete your usage statistics on the server too, first choose *Settings → Delete Statistics and Quit…*.
    ```bash
    rm -rf ~/Library/Application\ Support/org.keyswitch.KeySwitch
    defaults delete org.keyswitch.KeySwitch
@@ -75,6 +75,6 @@ If KeySwitch stops converting text after a manual update from 0.1.x, macOS may n
 מגיעים מגרסה ישנה בלי עדכון אוטומטי? מורידים פעם אחת את ה־DMG החדש, גוררים אל Applications ובוחרים **החלפה**. אם אחרי שדרוג ידני מ־0.1.x ההמרה הפסיקה לעבוד: בהגדרות המערכת ← פרטיות ואבטחה ← נגישות, מסירים את KeySwitch עם **−**, פותחים אותה שוב ועוברים על המדריך.
 
 ### הסרה
-יוצאים מ־KeySwitch (סמל שורת התפריטים ← יציאה), גוררים את האפליקציה לפח, ואם רוצים מוחקים גם את הנתונים בעזרת שתי הפקודות שבחלק האנגלי למעלה. אם הפעלתם סטטיסטיקות שימוש, כבו אותן קודם (הגדרות ← שיתוף סטטיסטיקות שימוש): הכיבוי מבקש גם מהשרת למחוק אותן.
+יוצאים מ־KeySwitch (סמל שורת התפריטים ← יציאה), גוררים את האפליקציה לפח, ואם רוצים מוחקים גם את הנתונים בעזרת שתי הפקודות שבחלק האנגלי למעלה. כדי למחוק גם את סטטיסטיקות השימוש מהשרת, בחרו קודם בהגדרות ← מחיקת הסטטיסטיקות ויציאה…
 
 </div>

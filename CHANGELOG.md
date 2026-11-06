@@ -4,8 +4,9 @@
 
 Tag `v0.2.1-beta`.
 
-- **Optional usage statistics, off by default.** *Settings → Share usage statistics*, after a screen that explains exactly what is sent. Only daily counts: conversions that succeeded, were not confirmed or failed, the failure reason from a fixed list, direction, replacement method, coarse duration, the kind of app (for example a browser), and versions. Never text, clipboard content, app or window names, or URLs. *What Is Sent…* shows the pending data. Turning it off deletes the random ID and the data on your Mac and on the server. Details: [PRIVACY.md](PRIVACY.md#usage-statistics-optional-off-by-default).
-- Conversion, the shortcut, settings and automatic updates are unchanged. Updating from Beta 2.0 is automatic.
+- **Usage statistics are now part of using KeySwitch.** At first launch, and once after updating from Beta 2.0, a Hebrew/English screen explains what is sent: daily counts of conversions that succeeded, were not confirmed or failed, the failure reason from a fixed list, direction, replacement method, coarse duration, the kind of app (for example a browser), versions, and a random installation ID. Never text, clipboard content, URLs, window titles or document content. Choose *Agree and Continue* or *Quit KeySwitch*; nothing is collected before you agree, and the shortcut stays off if you do not. *Settings → What Is Sent…* shows the pending data; *Delete Statistics and Quit…* deletes it on your Mac and on the server. Details: [PRIVACY.md](PRIVACY.md#usage-statistics-a-condition-of-use).
+- After a conversion the cursor sits right after the converted text, and the keyboard input language switches to match the conversion.
+- The shortcut and settings are otherwise unchanged. Updating from Beta 2.0 is automatic; the statistics screen appears on the first launch after the update.
 
 ## KeySwitch Beta 2.0 (0.2.0, build 18)
 
