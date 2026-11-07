@@ -81,7 +81,7 @@ macOS doesn't let an app see or change text in other apps without your permissio
 
 ## Windows (beta)
 
-**KeySwitch for Windows** is in early beta: [download KeySwitch for Windows Beta 0.1.0-beta.1](https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.1) (Windows 10 1809+ or 11, x64 or ARM64). Same idea, **Ctrl+Shift+J** by default. It is not code-signed yet, so Windows shows a warning when you install it, and it sends no usage statistics. Installation steps and known limitations are on the release page.
+**KeySwitch for Windows** is in early beta: [download KeySwitch for Windows Beta 0.1.0-beta.2](https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.2) (Windows 10 1809+ or 11, x64 or ARM64). Same idea, **Ctrl+Shift+J** by default. It is not code-signed yet, so Windows shows a warning when you install it. Its usage statistics are off unless you turn them on ([details](PRIVACY.md#usage-statistics-on-windows)). Installation steps and known limitations are on the release page.
 
 ## Feedback and community
 
@@ -136,7 +136,7 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 אם KeySwitch עוזרת לכם, נשמח ל־⭐ במאגר: כך עוד אנשים שמקלידים בעברית ובאנגלית ימצאו אותה.
 
 ### Windows (בטא)
-**KeySwitch ל־Windows** בבטא מוקדמת: [הורדת KeySwitch for Windows Beta 0.1.0-beta.1](https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.1) (Windows 10 גרסה 1809 ואילך או Windows 11, ‏x64 או ARM64). הקיצור כברירת מחדל: <bdi>Ctrl+Shift+J</bdi>. היא עדיין לא חתומה דיגיטלית, ולכן Windows מציג אזהרה בהתקנה. היא לא שולחת סטטיסטיקות שימוש. הוראות ומגבלות ידועות בעמוד הגרסה.
+**KeySwitch ל־Windows** בבטא מוקדמת: [הורדת KeySwitch for Windows Beta 0.1.0-beta.2](https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.2) (Windows 10 גרסה 1809 ואילך או Windows 11, ‏x64 או ARM64). הקיצור כברירת מחדל: <bdi>Ctrl+Shift+J</bdi>. היא עדיין לא חתומה דיגיטלית, ולכן Windows מציג אזהרה בהתקנה. סטטיסטיקות השימוש בה כבויות, אלא אם מפעילים אותן ([פרטים](PRIVACY.md#keyswitch-for-windows-עברית)). הוראות ומגבלות ידועות בעמוד הגרסה.
 
 ### משוב וקהילה
 KeySwitch מפותחת באופן פרטי (קוד המקור לא מפורסם), אבל נשמח מאוד למשוב, לשאלות ולהצעות.

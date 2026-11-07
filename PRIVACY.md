@@ -4,7 +4,7 @@
 
 This statement describes KeySwitch from version 0.2.1 (build 21, the first version with usage statistics).  Build 18 has the update check only; build 17 and earlier have no network code at all. It was written from a review of the app's source code, not as a marketing summary. If a future version changes any of this, this page will change with it.
 
-The sections below describe **KeySwitch for Mac**. **KeySwitch for Windows** works differently (for one, it sends no usage statistics): see [KeySwitch for Windows](#keyswitch-for-windows).
+The sections below describe **KeySwitch for Mac**. **KeySwitch for Windows** works differently (for one, its usage statistics are off unless you turn them on, in every country): see [KeySwitch for Windows](#keyswitch-for-windows) ([בעברית](#keyswitch-for-windows-עברית)).
 
 ## What KeySwitch accesses, and when
 
@@ -92,18 +92,59 @@ KeySwitch asks for one permission: **Accessibility**. It has no entitlements, us
 
 ## KeySwitch for Windows
 
-This describes KeySwitch for Windows from version 0.1.0-beta.1, also written from a review of its source code.
+This describes KeySwitch for Windows from version 0.1.0-beta.2 (the first Windows version with usage statistics), also written from a review of its source code. Version 0.1.0-beta.1 was never published and has no statistics code.
 
 | | |
 |---|---|
-| Usage statistics | **None.** The Windows version has no statistics code and no installation ID. |
-| Network | Only when you choose *Check for Updates*: one request to GitHub's public API for the list of KeySwitch releases. GitHub receives your IP address, as with any visit to GitHub ([GitHub's privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). Nothing about you or your text is sent. Links in the app (help, privacy policy) open in your browser. |
+| Usage statistics | **Off unless you turn them on.** The welcome window has an unchecked *Yes, share usage statistics* box, and *Settings → Privacy → Share usage statistics* turns them on or off at any time. This is the same in every country. Nothing is collected or sent, and no installation ID exists, until you turn them on. KeySwitch works exactly the same either way. Details below. |
+| Network | When you choose *Check for Updates*: one request to GitHub's public API for the list of KeySwitch releases. GitHub receives your IP address, as with any visit to GitHub ([GitHub's privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). Nothing about you or your text is sent. If you turned usage statistics on: the requests described below. Links in the app (help, privacy policy) open in your browser. |
 | What it reads, and when | Only when you press the shortcut: the text selected in the active window, through Windows UI Automation (the accessibility interface) or, where an app doesn't offer it, that app's own Copy. Password fields, terminal windows and apps running as administrator are skipped. |
 | Clipboard | To paste the converted text, KeySwitch puts it on the clipboard for a moment, marked so that Windows clipboard history and cloud clipboard skip it. Shortly after the paste (usually within a second, at most about 3 seconds) it puts back everything you had, unless you copied something new in the meantime. If your clipboard holds content a password manager marked as private, KeySwitch doesn't touch it and doesn't convert. If KeySwitch is closed in that moment, your previous clipboard may not come back. |
-| Stored on your PC | `%APPDATA%\KeySwitch\settings.json` (language, shortcut, options). If you turn on conversion history (off by default): `%APPDATA%\KeySwitch\history.bin`, encrypted with Windows DPAPI for your Windows user only. Turning history off deletes it. |
-| Diagnostics | The last 50 attempts, in memory only (outcome, method, the app's process name such as `chrome`, timings; never text). It leaves your PC only if you copy the report and paste it somewhere. |
+| Stored on your PC | `%APPDATA%\KeySwitch\settings.json` (language, shortcut, options). If you turn on conversion history (off by default): `%APPDATA%\KeySwitch\history.bin`, encrypted with Windows DPAPI for your Windows user only. Turning history off deletes it. If you turn on usage statistics: `%APPDATA%\KeySwitch\telemetry.json` (the installation ID and up to 35 days of counts not sent yet). |
+| Diagnostics | The last 50 attempts, in memory only (outcome, method, the app's process name such as `chrome`, timings; never text). It leaves your PC only if you copy the report and paste it somewhere. It is never part of the usage statistics. |
 | Permissions | None to grant. KeySwitch runs as your user and never asks for administrator rights. "Start when I sign in" adds one value under `HKEY_CURRENT_USER\…\Run`. |
-| Uninstalling | Removes the app, the sign-in entry, the settings and the history. |
+| Uninstalling | Removes the app, the sign-in entry, the settings, the history and the statistics files on your PC. It cannot reach the server: to delete statistics already sent, turn statistics off before uninstalling (or email the address below). Otherwise they are deleted after 400 days. |
+
+### Usage statistics on Windows
+
+They show whether conversion works on Windows, in which kinds of apps it fails and why, so the beta can be fixed. They are not used to track you or build a profile.
+
+| What | Details |
+|---|---|
+| What is sent | Daily counts of shortcut presses and of conversions that succeeded, were not confirmed, or failed. The failure reason, from a fixed list (for example "no selection", "terminal window", "app running as administrator"). The conversion direction. The method (UI Automation or the app's Copy, then paste). The duration in coarse buckets. The **kind** of app (browser, messaging, AI app, code editor, Microsoft Office, a built-in Windows app, other). The KeySwitch version and build, the Windows version and build number (for example 10.0.26100), the processor type (x64 or ARM64), the update channel, and the local date. The app's name is reduced to its kind on your PC and never sent. Presses in KeySwitch's own practice field are not counted. |
+| Identifier | A random installation ID, created when you turn statistics on, used only to count active installations and retention. It is persistent, so the data is **pseudonymous, not anonymous**. It is not derived from your PC, your Windows account or anything else, and is not linked to your name. On the server it is stored only as a keyed hash. Someone with KeySwitch on a Mac and a PC counts as two installations; they are not linked. |
+| What is never sent | The text you select, convert or type. Clipboard content. Passwords. App names or process names. Window titles, file names, document content or URLs. Your name, Windows user name, computer name, email, hardware identifiers, language or time zone. |
+| When | A minute after KeySwitch starts, then at most once an hour, in the background. Sending never delays or affects a conversion. Each day is sent as a running total, so a repeated send (for example after a lost connection) replaces that day on the server and is never counted twice. If you are offline, up to 35 days are kept and sent later; older days are dropped. After a failed send KeySwitch waits longer before trying again (at most a day). |
+| Where | The same server as the Mac version: run by KeySwitch's developer on Cloudflare Workers, over HTTPS only (no redirects, no cookies). The database is in Cloudflare's European region. Cloudflare processes your IP address to deliver the request. KeySwitch's server does not store IP addresses and keeps no request logs. |
+| Retention | Statistics are deleted after 400 days. |
+| Turning them off | *Settings → Privacy → Share usage statistics*. Sending stops at once, the ID and the queued data on your PC are deleted, and the server is asked to delete everything stored for that ID. If your PC is offline at that moment, only the random ID is kept (`%APPDATA%\KeySwitch\telemetry-deletions.json`) and the request is repeated each time KeySwitch starts, until the server confirms it. Turning them on again creates a new, unrelated ID. *What Is Sent…* (next to the switch) shows the exact data waiting to be sent. |
+| Who sees it | Only the developer, through a private dashboard behind sign-in. Statistics are not sold or shared. Aggregated totals (for example "N active installations") may be published. |
+
+## KeySwitch for Windows: עברית
+
+<div dir="rtl" lang="he">
+
+הסעיף הזה מתאר את KeySwitch ל־Windows מגרסה <bdi>0.1.0-beta.2</bdi> (הגרסה הראשונה ל־Windows עם סטטיסטיקות שימוש), ונכתב מתוך קריאת קוד המקור. גרסה <bdi>0.1.0-beta.1</bdi> לא פורסמה, ואין בה קוד סטטיסטיקות.
+
+- **ההמרה מתבצעת כולה במחשב שלכם, והטקסט לא יוצא ממנו.** הטקסט המסומן נקרא רק כשלוחצים על הקיצור (דרך UI Automation של Windows, או פקודת ההעתקה של האפליקציה). שדות סיסמה, חלונות טרמינל ואפליקציות שפועלות כמנהל מערכת מדולגים.
+- **הלוח (clipboard):** הטקסט המומר מונח בלוח לרגע, מסומן כך שהיסטוריית הלוח של Windows והלוח בענן מדלגים עליו. זמן קצר אחרי ההדבקה (בדרך כלל תוך שנייה, לכל היותר כ־3 שניות) מה שהיה בלוח חוזר, אלא אם העתקתם משהו חדש בינתיים. תוכן שמנהל סיסמאות סימן כפרטי לא נוגעים בו.
+- **רשת:** בקשה אחת ל־GitHub כשבוחרים "בדיקת עדכונים", ושליחת סטטיסטיקות שימוש רק אם הפעלתם אותן.
+- **נשמר במחשב:** <bdi>%APPDATA%\KeySwitch\settings.json</bdi> (הגדרות). היסטוריית המרות, רק אם הפעלתם אותה (כבויה כברירת מחדל): <bdi>history.bin</bdi>, מוצפנת עם DPAPI עבור המשתמש שלכם ב־Windows. סטטיסטיקות, רק אם הפעלתם אותן: <bdi>telemetry.json</bdi>.
+- **הסרה:** מוחקת את האפליקציה, ההגדרות, ההיסטוריה וקובצי הסטטיסטיקות במחשב. כדי למחוק גם סטטיסטיקות שכבר נשלחו לשרת, כבו אותן לפני ההסרה (או כתבו לכתובת למטה). אחרת הן נמחקות אחרי 400 ימים.
+
+### סטטיסטיקות שימוש ב־Windows
+
+- **כבויות, אלא אם הפעלתם אותן.** בחלון הפתיחה יש תיבה לא מסומנת "כן, לשתף סטטיסטיקות שימוש", ובהגדרות ← פרטיות ← "שיתוף סטטיסטיקות שימוש" אפשר להפעיל ולכבות בכל עת. כך בכל מדינה. עד שמפעילים לא נאסף ולא נשלח כלום, ואין מזהה התקנה. KeySwitch עובדת אותו דבר בכל מקרה.
+- **מה נשלח:** מונים יומיים של לחיצות על הקיצור ושל המרות שהצליחו, לא אומתו או נכשלו; סיבת הכישלון מתוך רשימה סגורה; כיוון ההמרה; שיטת ההחלפה; משך בטווחים גסים; **סוג** האפליקציה (דפדפן, הודעות, AI, עורך קוד, Microsoft Office, אפליקציה מובנית של Windows, אחר); גרסת KeySwitch, גרסת Windows ומספר ה־build שלה (למשל <bdi>10.0.26100</bdi>), סוג המעבד (<bdi>x64</bdi> או <bdi>ARM64</bdi>), ערוץ העדכון והתאריך המקומי. שם האפליקציה הופך לסוג שלה במחשב ולא נשלח. לחיצות בשדה התרגול של KeySwitch לא נספרות.
+- **מזהה:** מזהה התקנה אקראי, שנוצר כשמפעילים את הסטטיסטיקות, ומשמש רק לספירת התקנות פעילות. הוא קבוע, ולכן הנתונים **פסאודונימיים, לא אנונימיים**. הוא לא נגזר מהמחשב או מהחשבון שלכם ולא מקושר לשמכם. בשרת נשמר רק גיבוב מוצפן שלו. מי שיש לו KeySwitch גם ב־Mac וגם ב־Windows נספר כשתי התקנות שאינן מקושרות.
+- **מה אף פעם לא נשלח:** הטקסט שמסמנים, ממירים או מקלידים; תוכן הלוח; סיסמאות; שמות אפליקציות או תהליכים; כותרות חלונות, שמות קבצים, תוכן מסמכים או כתובות אתרים; השם, שם המשתמש, שם המחשב, האימייל, מזהי חומרה, השפה או אזור הזמן.
+- **מתי:** דקה אחרי ש־KeySwitch מתחילה לפעול, ואחר כך לכל היותר פעם בשעה, ברקע. כל יום נשלח כסכום מצטבר, ולכן שליחה חוזרת (למשל אחרי ניתוק) מחליפה את היום הזה בשרת ולא נספרת פעמיים. בלי חיבור לרשת נשמרים עד 35 ימים ונשלחים אחר כך.
+- **לאן:** אותו שרת של הגרסה ל־Mac, שמפעיל המפתח של KeySwitch ב־Cloudflare Workers, ב־HTTPS בלבד. מסד הנתונים באזור האירופי של Cloudflare. Cloudflare מעבדת את כתובת ה־IP כדי להעביר את הבקשה; השרת של KeySwitch לא שומר כתובות IP ולא שומר יומני בקשות.
+- **שמירה:** הסטטיסטיקות נמחקות אחרי 400 ימים.
+- **כיבוי:** הגדרות ← פרטיות ← "שיתוף סטטיסטיקות שימוש". השליחה נעצרת מיד, המזהה והנתונים שממתינים נמחקים מהמחשב, ונשלחת לשרת בקשה למחוק את כל מה שנשמר עבור המזהה. אם אין חיבור באותו רגע, נשמר רק המזהה האקראי, והבקשה נשלחת שוב בכל הפעלה עד שהשרת מאשר. הפעלה מחדש יוצרת מזהה חדש ולא קשור. הכפתור "מה נשלח…" מציג בדיוק את מה שממתין לשליחה.
+- **מי רואה:** רק המפתח, בלוח בקרה פרטי מאחורי התחברות. הנתונים לא נמכרים ולא מועברים לאחרים. ייתכן שיפורסמו סיכומים כלליים (למשל "N התקנות פעילות").
+
+</div>
 
 ## Contact
 
