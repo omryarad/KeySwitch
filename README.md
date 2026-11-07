@@ -79,6 +79,10 @@ macOS doesn't let an app see or change text in other apps without your permissio
 - **Clipboard during replacement:** in browsers and some apps, KeySwitch briefly uses the clipboard and restores it about a second later. If KeySwitch quits unexpectedly during that second, your previous clipboard may not come back.
 - **Layouts:** only Hebrew ⇄ English (U.S.) is supported. Other layouts, such as Hebrew-PC or Dvorak, are not supported yet.
 
+## Windows (beta)
+
+**KeySwitch for Windows** is in early beta: [download KeySwitch for Windows Beta 0.1.0-beta.1](https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.1) (Windows 10 1809+ or 11, x64 or ARM64). Same idea, **Ctrl+Shift+J** by default. It is not code-signed yet, so Windows shows a warning when you install it, and it sends no usage statistics. Installation steps and known limitations are on the release page.
+
 ## Feedback and community
 
 This is a beta, and your reports shape it. KeySwitch is developed privately (the source code is not published), but feedback, questions and suggestions are very welcome.
@@ -130,6 +134,9 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 הכול קורה במחשב שלכם, והטקסט שלכם לא יוצא ממנו. אין חשבון. הבקשות לרשת הן בדיקת עדכונים יומית ב־GitHub, שאפשר לכבות, וסטטיסטיקות שימוש: מונים ומזהה התקנה אקראי, אף פעם לא טקסט. הן מופעלות כברירת מחדל אחרי הודעה קצרה, ואפשר לכבות אותן בכל עת בהגדרות ← פרטיות. היסטוריית ההמרות כבויה כברירת מחדל. פרטים מלאים: [PRIVACY.md](PRIVACY.md).
 
 אם KeySwitch עוזרת לכם, נשמח ל־⭐ במאגר: כך עוד אנשים שמקלידים בעברית ובאנגלית ימצאו אותה.
+
+### Windows (בטא)
+**KeySwitch ל־Windows** בבטא מוקדמת: [הורדת KeySwitch for Windows Beta 0.1.0-beta.1](https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.1) (Windows 10 גרסה 1809 ואילך או Windows 11, ‏x64 או ARM64). הקיצור כברירת מחדל: <bdi>Ctrl+Shift+J</bdi>. היא עדיין לא חתומה דיגיטלית, ולכן Windows מציג אזהרה בהתקנה. היא לא שולחת סטטיסטיקות שימוש. הוראות ומגבלות ידועות בעמוד הגרסה.
 
 ### משוב וקהילה
 KeySwitch מפותחת באופן פרטי (קוד המקור לא מפורסם), אבל נשמח מאוד למשוב, לשאלות ולהצעות.

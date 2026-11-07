@@ -4,6 +4,8 @@
 
 This statement describes KeySwitch from version 0.2.1 (build 21, the first version with usage statistics).  Build 18 has the update check only; build 17 and earlier have no network code at all. It was written from a review of the app's source code, not as a marketing summary. If a future version changes any of this, this page will change with it.
 
+The sections below describe **KeySwitch for Mac**. **KeySwitch for Windows** works differently (for one, it sends no usage statistics): see [KeySwitch for Windows](#keyswitch-for-windows).
+
 ## What KeySwitch accesses, and when
 
 | What | When | Why |
@@ -87,6 +89,21 @@ The report leaves your Mac only if **you** copy it (*Settings → Advanced diagn
 ## Permissions
 
 KeySwitch asks for one permission: **Accessibility**. It has no entitlements, uses the hardened runtime, and is not sandboxed. The App Sandbox doesn't allow the Accessibility features KeySwitch needs. You can revoke the permission at any time in System Settings → Privacy & Security → Accessibility.
+
+## KeySwitch for Windows
+
+This describes KeySwitch for Windows from version 0.1.0-beta.1, also written from a review of its source code.
+
+| | |
+|---|---|
+| Usage statistics | **None.** The Windows version has no statistics code and no installation ID. |
+| Network | Only when you choose *Check for Updates*: one request to GitHub's public API for the list of KeySwitch releases. GitHub receives your IP address, as with any visit to GitHub ([GitHub's privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). Nothing about you or your text is sent. Links in the app (help, privacy policy) open in your browser. |
+| What it reads, and when | Only when you press the shortcut: the text selected in the active window, through Windows UI Automation (the accessibility interface) or, where an app doesn't offer it, that app's own Copy. Password fields, terminal windows and apps running as administrator are skipped. |
+| Clipboard | To paste the converted text, KeySwitch puts it on the clipboard for a moment, marked so that Windows clipboard history and cloud clipboard skip it. Shortly after the paste (usually within a second, at most about 3 seconds) it puts back everything you had, unless you copied something new in the meantime. If your clipboard holds content a password manager marked as private, KeySwitch doesn't touch it and doesn't convert. If KeySwitch is closed in that moment, your previous clipboard may not come back. |
+| Stored on your PC | `%APPDATA%\KeySwitch\settings.json` (language, shortcut, options). If you turn on conversion history (off by default): `%APPDATA%\KeySwitch\history.bin`, encrypted with Windows DPAPI for your Windows user only. Turning history off deletes it. |
+| Diagnostics | The last 50 attempts, in memory only (outcome, method, the app's process name such as `chrome`, timings; never text). It leaves your PC only if you copy the report and paste it somewhere. |
+| Permissions | None to grant. KeySwitch runs as your user and never asks for administrator rights. "Start when I sign in" adds one value under `HKEY_CURRENT_USER\…\Run`. |
+| Uninstalling | Removes the app, the sign-in entry, the settings and the history. |
 
 ## Contact
 

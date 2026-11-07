@@ -2,7 +2,7 @@
 
 **KeySwitch Beta 2.1 (version 0.2.1) and later. Last updated: November 2026.**
 
-These terms apply to your use of KeySwitch, a macOS app ("KeySwitch"; its developer: "the developer"). By using KeySwitch you accept these terms. How KeySwitch handles data is described in the [Privacy Policy](PRIVACY.md).
+These terms apply to your use of KeySwitch, an app for macOS and Windows ("KeySwitch"; its developer: "the developer"). By using KeySwitch you accept these terms. How KeySwitch handles data is described in the [Privacy Policy](PRIVACY.md).
 
 1. **Usage statistics.** KeySwitch sends usage statistics as described in the [Privacy Policy](PRIVACY.md#usage-statistics): a random installation identifier (pseudonymous, not anonymous), versions, and daily counts of conversions, their outcomes and failure categories. It never collects the text you type, select or convert, clipboard content, passwords, URLs, window titles or document content. Statistics are on by default (asked for first in the EU, EEA, UK and Switzerland) and you can turn them off at any time in *Settings → Privacy* without losing any feature.
 2. **Your data rights.** Turning statistics off deletes the data on your Mac and on the server. You can also ask to access, correct or delete your data by writing to **omry@taskirim.com**.
@@ -22,7 +22,7 @@ These terms apply to your use of KeySwitch, a macOS app ("KeySwitch"; its develo
 
 **KeySwitch Beta 2.1 (גרסה 0.2.1) ואילך. עדכון אחרון: נובמבר 2026.**
 
-תנאים אלה חלים על השימוש ב־KeySwitch, אפליקציה ל־macOS (להלן: "המפתח" — מפתח KeySwitch). השימוש ב־KeySwitch הוא הסכמה לתנאים אלה. האופן שבו KeySwitch מטפלת במידע מתואר ב[מדיניות הפרטיות](PRIVACY.md).
+תנאים אלה חלים על השימוש ב־KeySwitch, אפליקציה ל־macOS ול־Windows (להלן: "המפתח" — מפתח KeySwitch). השימוש ב־KeySwitch הוא הסכמה לתנאים אלה. האופן שבו KeySwitch מטפלת במידע מתואר ב[מדיניות הפרטיות](PRIVACY.md).
 
 1. **סטטיסטיקות שימוש.** KeySwitch שולחת סטטיסטיקות שימוש כמתואר ב[מדיניות הפרטיות](PRIVACY.md#usage-statistics):
    - מזהה התקנה אקראי (מידע מזוהה בדרך עקיפה, לא אנונימי);
