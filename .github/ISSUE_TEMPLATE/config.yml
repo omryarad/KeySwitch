@@ -1,5 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Security vulnerability (private)
-    url: ../../security/advisories/new
-    about: Please report security issues privately, not as a public issue.
+  - name: "Question or help / שאלה או עזרה"
+    url: https://github.com/omryarad/KeySwitch/discussions/categories/q-a
+    about: "Ask in Discussions → Q&A. / שאלו ב־Discussions ← Q&A."
+  - name: "Discuss an idea / דיון ברעיון"
+    url: https://github.com/omryarad/KeySwitch/discussions/categories/ideas
+    about: "Share and discuss ideas before they become a feature request. / שתפו ודונו ברעיונות."
+  - name: "Security vulnerability (private) / פרצת אבטחה (בפרטיות)"
+    url: https://github.com/omryarad/KeySwitch/security/advisories/new
+    about: "Please report security issues privately, not as a public issue. / דווחו על בעיות אבטחה בפרטיות, לא בדיווח ציבורי."

@@ -1,14 +1,31 @@
-name: Feature request / הצעה
-description: An idea to make KeySwitch better.
+name: "Feature request / בקשה לתכונה"
+description: "An idea to make KeySwitch better. / רעיון לשיפור KeySwitch."
 labels: [enhancement]
 body:
-  - type: textarea
-    id: idea
+  - type: markdown
     attributes:
-      label: What would you like KeySwitch to do?
+      value: |
+        Not sure yet, or want to discuss it first? Start a thread in [Discussions → Ideas](../../discussions/categories/ideas).
+        <div dir="rtl">עדיין לא בטוחים, או רוצים לדון בזה קודם? פתחו שיחה ב־<a href="../../discussions/categories/ideas">Discussions ← Ideas</a>.</div>
+  - type: textarea
+    id: problem
+    attributes:
+      label: "What problem would it solve? / איזו בעיה זה יפתור?"
+      placeholder: "When I … / כש…"
     validations:
       required: true
   - type: textarea
-    id: why
+    id: idea
     attributes:
-      label: Why would it help you?
+      label: "What would you like KeySwitch to do? / מה הייתם רוצים ש־KeySwitch תעשה?"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Platform / פלטפורמה"
+      options: ["macOS", "Windows", "Both / שתיהן"]
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Anything you tried instead? (optional) / משהו שניסיתם במקום? (לא חובה)"

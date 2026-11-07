@@ -15,11 +15,18 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg">⬇️ Download</a> ·
+  <a href="../../issues/new?template=bug_report.yml">🐞 Report a Bug</a> ·
+  <a href="../../issues/new?template=feature_request.yml">💡 Request a Feature</a> ·
+  <a href="../../discussions/categories/q-a">❓ Ask a Question</a> ·
+  <a href="../../discussions">💬 Discussions</a>
+</p>
+
+<p align="center">
   <a href="../../releases">All releases</a> ·
   <a href="INSTALL.md">Installation</a> ·
   <a href="PRIVACY.md">Privacy</a> ·
   <a href="TERMS.md">Terms</a> ·
-  <a href="../../issues/new/choose">Report a problem</a> ·
   <a href="#עברית">עברית</a>
 </p>
 
@@ -72,13 +79,19 @@ macOS doesn't let an app see or change text in other apps without your permissio
 - **Clipboard during replacement:** in browsers and some apps, KeySwitch briefly uses the clipboard and restores it about a second later. If KeySwitch quits unexpectedly during that second, your previous clipboard may not come back.
 - **Layouts:** only Hebrew ⇄ English (U.S.) is supported. Other layouts, such as Hebrew-PC or Dvorak, are not supported yet.
 
-## Feedback
+## Feedback and community
 
-This is a beta, and your reports shape it.
+This is a beta, and your reports shape it. KeySwitch is developed privately (the source code is not published), but feedback, questions and suggestions are very welcome.
 
-- **Something didn't convert?** [Open a bug report](../../issues/new?template=bug_report.yml). Say which app or website it was. If you can, attach the diagnostics report from *Settings → Advanced diagnostics → Copy Full Diagnostics Report*. It never contains your text.
-- **Ideas:** [request a feature](../../issues/new?template=feature_request.yml).
-- **Security issues:** please report them privately, see [SECURITY.md](SECURITY.md).
+| | |
+|---|---|
+| 🐞 **Something didn't convert?** | [Report a bug](../../issues/new?template=bug_report.yml). Say which app or website it was. If you can, attach the diagnostics report from *Settings → Advanced diagnostics → Copy Full Diagnostics Report*. It never contains your text. |
+| 💡 **An idea?** | [Request a feature](../../issues/new?template=feature_request.yml), or discuss it first in [Ideas](../../discussions/categories/ideas). |
+| ❓ **A question?** | [Ask in Q&A](../../discussions/categories/q-a). |
+| 💬 **Anything else** | [Discussions](../../discussions), and [Announcements](../../discussions/categories/announcements) for news. |
+| 🔒 **Security issue** | Report it privately, see [SECURITY.md](SECURITY.md). |
+
+Issues and discussions are public: **never post passwords, private text, clipboard contents or sensitive logs.**
 
 If KeySwitch saves you some typing, a ⭐ star helps others find it. Thank you!
 
@@ -118,7 +131,15 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 
 אם KeySwitch עוזרת לכם, נשמח ל־⭐ במאגר: כך עוד אנשים שמקלידים בעברית ובאנגלית ימצאו אותה.
 
-### דיווח על בעיה
-[פתחו דיווח](../../issues/new/choose), וציינו באיזו אפליקציה או אתר זה קרה. אפשר לצרף את דוח האבחון מתוך *הגדרות ← אבחון מתקדם ← העתק דוח אבחון*. הדוח לא מכיל את הטקסט שלכם.
+### משוב וקהילה
+KeySwitch מפותחת באופן פרטי (קוד המקור לא מפורסם), אבל נשמח מאוד למשוב, לשאלות ולהצעות.
+
+- 🐞 **משהו לא הומר?** [דווחו על תקלה](../../issues/new?template=bug_report.yml), וציינו באיזו אפליקציה או אתר זה קרה. אפשר לצרף את דוח האבחון מתוך *הגדרות ← אבחון מתקדם ← העתק דוח אבחון*. הדוח לא מכיל את הטקסט שלכם.
+- 💡 **רעיון?** [בקשו תכונה](../../issues/new?template=feature_request.yml), או דונו בו קודם ב־[Ideas](../../discussions/categories/ideas).
+- ❓ **שאלה?** [שאלו ב־Q&A](../../discussions/categories/q-a).
+- 💬 **כל השאר:** [Discussions](../../discussions), ועדכונים ב־[Announcements](../../discussions/categories/announcements).
+- 🔒 **בעיית אבטחה:** דווחו בפרטיות, ראו [SECURITY.md](SECURITY.md).
+
+הדיווחים והשיחות ציבוריים: **אל תפרסמו סיסמאות, טקסט פרטי, תוכן מהלוח או לוגים רגישים.**
 
 </div>

@@ -1,53 +1,96 @@
-name: Bug report / דיווח על תקלה
-description: Something didn't convert, or KeySwitch misbehaved.
+name: "Bug report / דיווח על תקלה"
+description: "Something didn't convert, or KeySwitch misbehaved. / משהו לא הומר, או ש־KeySwitch לא עבדה כמו שצריך."
 labels: [bug]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for testing the beta! **Please don't paste private text.** KeySwitch's diagnostics report never contains your text.
-        תודה על הבדיקה! אל תדביקו כאן טקסט פרטי. דוח האבחון של KeySwitch לא מכיל את הטקסט שלכם.
+        **Please don't include passwords, private text, clipboard contents or sensitive logs.** Describe the problem with a made-up example instead (for example `akuo` → `שלום`). Issues are public.
+        KeySwitch's own diagnostics report never contains your text, so it's safe to attach.
+
+        <div dir="rtl">
+
+        **אל תכללו סיסמאות, טקסט פרטי, תוכן מהלוח (clipboard) או קובצי לוג רגישים.** תארו את הבעיה עם דוגמה מומצאת (למשל `akuo` ← `שלום`). הדיווחים כאן ציבוריים.
+        דוח האבחון של KeySwitch לא מכיל את הטקסט שלכם, ולכן בטוח לצרף אותו.
+
+        </div>
   - type: input
     id: version
     attributes:
-      label: KeySwitch version
-      description: Settings → About
-      placeholder: 0.2.0 (16)
+      label: "KeySwitch version / גרסת KeySwitch"
+      description: "Settings → About / הגדרות ← אודות"
+      placeholder: "0.2.1 (21)"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Operating system / מערכת הפעלה"
+      options: ["macOS", "Windows"]
     validations:
       required: true
   - type: input
-    id: macos
+    id: os_version
     attributes:
-      label: macOS version
-      placeholder: macOS 26.1
+      label: "OS version / גרסת מערכת ההפעלה"
+      placeholder: "macOS 26.1 / Windows 11 24H2"
     validations:
       required: true
   - type: input
     id: where
     attributes:
-      label: App or website
-      description: For example Chrome on google.com, Safari, Notes, Slack…
+      label: "App or website where it happened / האפליקציה או האתר שבהם זה קרה"
+      description: "For example: Chrome on google.com, Notes, WhatsApp, Word / למשל: Chrome באתר google.com, ‏Notes, ‏WhatsApp, ‏Word"
     validations:
       required: true
   - type: dropdown
     id: direction
     attributes:
-      label: Direction
-      options: ["English letters → Hebrew", "Hebrew → English letters", "Both", "Not about conversion"]
-  - type: dropdown
-    id: frequency
-    attributes:
-      label: How often?
-      options: ["Every time", "Sometimes", "Once"]
+      label: "Conversion direction / כיוון ההמרה"
+      options: ["English letters → Hebrew / אותיות אנגליות ← עברית", "Hebrew → English letters / עברית ← אותיות אנגליות", "Both / שניהם", "Not about conversion / לא קשור להמרה"]
   - type: textarea
-    id: what
+    id: steps
     attributes:
-      label: What happened, and what did you expect?
+      label: "Steps to reproduce / שלבים לשחזור"
+      placeholder: |
+        1. Type `akuo` in …
+        2. Select it and press the shortcut
+        3. …
     validations:
       required: true
   - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior / מה ציפיתם שיקרה"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior / מה קרה בפועל"
+      description: "Include any message KeySwitch showed. / כולל הודעה ש־KeySwitch הציגה, אם הייתה."
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: "How often? / באיזו תדירות?"
+      options: ["Every time / בכל פעם", "Sometimes / לפעמים", "Once / פעם אחת"]
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Screenshots (optional) / צילומי מסך (לא חובה)"
+      description: "Drag images here. Make sure they show no private information. / גררו תמונות לכאן. ודאו שאין בהן מידע פרטי."
+  - type: textarea
     id: diagnostics
     attributes:
-      label: Diagnostics report (optional)
-      description: Settings → Advanced diagnostics → Copy Full Diagnostics Report, then paste here.
+      label: "Diagnostics report (optional) / דוח אבחון (לא חובה)"
+      description: "Settings → Advanced diagnostics → Copy Full Diagnostics Report. It contains no text you typed. / הגדרות ← אבחון מתקדם ← העתק דוח אבחון. אין בו טקסט שהקלדתם."
       render: text
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: "Privacy / פרטיות"
+      options:
+        - label: "This report contains no passwords, private text, clipboard contents or sensitive logs. / הדיווח לא מכיל סיסמאות, טקסט פרטי, תוכן מהלוח או לוגים רגישים."
+          required: true

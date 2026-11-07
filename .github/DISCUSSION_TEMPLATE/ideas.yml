@@ -1,0 +1,17 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Don't post passwords, private text or clipboard contents.** Discussions are public.
+        <div dir="rtl"><b>אל תפרסמו סיסמאות, טקסט פרטי או תוכן מהלוח.</b> השיחות כאן ציבוריות.</div>
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Your idea / הרעיון שלכם"
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: "KeySwitch version and OS (optional) / גרסת KeySwitch ומערכת הפעלה (לא חובה)"
+      placeholder: "0.2.1 (21), macOS 26.1"
