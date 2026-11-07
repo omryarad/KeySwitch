@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>הורדת KeySwitch</title>
+<meta name="description" content="הורדת KeySwitch: תיקון טקסט שהוקלד בפריסת המקלדת הלא נכונה, עברית ⇄ אנגלית. ל־Mac ול־Windows (בטא).">
+<link rel="icon" href="../assets/icon.png">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="lang"><a href="../" lang="en" hreflang="en">English</a></div>
+  <header class="top">
+    <img class="icon" src="../assets/icon.png" alt="" width="88" height="88">
+    <h1>הורדת KeySwitch</h1>
+    <p class="tagline">הקלדתם בפריסת המקלדת הלא נכונה? מסמנים את הטקסט, לוחצים על קיצור אחד, ו־KeySwitch מתקנת אותו במקום: עברית ⇄ אנגלית.</p>
+    <p class="pick">בחרו את המחשב שלכם:</p>
+  </header>
+
+  <main>
+    <div class="cards">
+      <section class="card" aria-labelledby="mac">
+        <div class="badges"><span class="badge">בטא 2.1</span><span class="badge">Apple Silicon ו־Intel</span></div>
+        <h2 id="mac">KeySwitch ל־Mac</h2>
+        <p class="sub">לכל Mac עם macOS 13 ומעלה.</p>
+        <a class="btn" href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg">הורדה ל־Mac</a>
+        <p class="file"><bdi>KeySwitch-0.2.1.dmg</bdi> · קובץ התקנה DMG</p>
+        <h3>התקנה</h3>
+        <ol>
+          <li>פותחים את קובץ ה־DMG שהורד.</li>
+          <li>גוררים את <b>KeySwitch</b> אל <b>Applications</b>.</li>
+          <li>פותחים את KeySwitch מתיקיית היישומים ועוברים על מדריך הפתיחה הקצר (הוא מבקש הרשאת נגישות).</li>
+          <li>מסמנים טקסט ולוחצים <kbd dir="ltr">⇧⌘J</kbd>.</li>
+        </ol>
+        <p class="req">חתומה ומאושרת על ידי Apple. מתעדכנת אוטומטית. <a href="https://github.com/omryarad/KeySwitch/blob/main/INSTALL.md#עברית">הוראות מלאות</a></p>
+      </section>
+
+      <section class="card recommended" aria-labelledby="win-x64">
+        <div class="badges"><span class="badge rec">רוב מחשבי Windows</span><span class="badge beta">בטא</span></div>
+        <h2 id="win-x64">KeySwitch ל־Windows</h2>
+        <p class="sub">מעבדי <b>Intel / AMD</b> ‏(x64). בחרו בזה אם אתם לא בטוחים.</p>
+        <a class="btn" href="https://github.com/omryarad/KeySwitch/releases/download/windows-v0.1.0-beta.2/KeySwitch-0.1.0-beta.2-windows-x64-setup.exe">הורדה ל־Windows ‏(Intel / AMD)</a>
+        <p class="file"><bdi>KeySwitch-0.1.0-beta.2-windows-x64-setup.exe</bdi> · קובץ התקנה EXE</p>
+        <h3>התקנה</h3>
+        <ol>
+          <li>פותחים את הקובץ שהורד.</li>
+          <li>Windows יציג "Windows protected your PC" כי הבטא עדיין לא חתומה דיגיטלית: לוחצים <b>More info</b> ואז <b>Run anyway</b>.</li>
+          <li>ההתקנה היא למשתמש שלכם בלבד, בלי הרשאות מנהל.</li>
+          <li>מסמנים טקסט ולוחצים <kbd dir="ltr">Ctrl+Shift+J</kbd>. KeySwitch נמצאת בסמל ⇄ שליד השעון.</li>
+        </ol>
+        <p class="req">Windows 10 (גרסה 1809 ואילך) או Windows 11. בטא ניסיונית, לא חתומה דיגיטלית. <a href="https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.2">הערות גרסה</a></p>
+      </section>
+
+      <section class="card" aria-labelledby="win-arm">
+        <div class="badges"><span class="badge">Windows על ARM</span><span class="badge beta">בטא</span></div>
+        <h2 id="win-arm">KeySwitch ל־Windows</h2>
+        <p class="sub">מעבדי <b>ARM / Snapdragon</b> ‏(ARM64), למשל מחשבי Copilot+ עם Snapdragon או Surface Pro X.</p>
+        <a class="btn" href="https://github.com/omryarad/KeySwitch/releases/download/windows-v0.1.0-beta.2/KeySwitch-0.1.0-beta.2-windows-arm64-setup.exe">הורדה ל־Windows ‏(ARM / Snapdragon)</a>
+        <p class="file"><bdi>KeySwitch-0.1.0-beta.2-windows-arm64-setup.exe</bdi> · קובץ התקנה EXE</p>
+        <h3>התקנה</h3>
+        <ol>
+          <li>פותחים את הקובץ שהורד.</li>
+          <li>במסך "Windows protected your PC" לוחצים <b>More info</b> ואז <b>Run anyway</b> (הבטא עדיין לא חתומה).</li>
+          <li>ההתקנה היא למשתמש שלכם בלבד, בלי הרשאות מנהל.</li>
+          <li>מסמנים טקסט ולוחצים <kbd dir="ltr">Ctrl+Shift+J</kbd>.</li>
+        </ol>
+        <p class="req">Windows 11 על ARM, או Windows 10 על ARM (גרסה 1809 ואילך). בטא ניסיונית, לא חתומה דיגיטלית. <a href="https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.2">הערות גרסה</a></p>
+      </section>
+    </div>
+
+    <section class="help" aria-labelledby="which">
+      <h2 id="which">איזו גרסת Windows מתאימה לי?</h2>
+      <p>פותחים <b>הגדרות ← מערכת ← אודות</b> ומסתכלים ב<b>סוג מערכת</b>: "מעבד מבוסס x64" פירושו <b>Intel / AMD</b>; "מעבד מבוסס ARM" פירושו <b>ARM / Snapdragon</b>. רוב המחשבים הם Intel / AMD.</p>
+    </section>
+
+    <div class="notice" role="note">
+      <b>KeySwitch ל־Windows היא גרסת בטא ניסיונית.</b> היא עדיין לא חתומה דיגיטלית, ולכן Windows וחלק מתוכנות האנטי־וירוס עשויים להזהיר, והיא עדיין לא עובדת בכל האפליקציות. כשהמרה נכשלת, הטקסט המקורי נשאר כמו שהיה. נשמח ש<a href="https://github.com/omryarad/KeySwitch/issues/new?template=bug_report.yml">תדווחו על כל דבר שלא עובד</a>.
+    </div>
+
+    <section class="help" aria-labelledby="privacy">
+      <h2 id="privacy">פרטיות מהיסוד</h2>
+      <p>ההמרה מתבצעת במחשב שלכם, והטקסט לא יוצא ממנו. אין חשבון. כל הפרטים, כולל סטטיסטיקות השימוש האופציונליות: <a href="https://github.com/omryarad/KeySwitch/blob/main/PRIVACY.md#keyswitch-for-windows-עברית">מדיניות הפרטיות</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="קישורים">
+      <a href="https://github.com/omryarad/KeySwitch/issues/new?template=bug_report.yml">דיווח על תקלה</a>
+      <a href="https://github.com/omryarad/KeySwitch/issues/new?template=feature_request.yml">הצעה לתכונה</a>
+      <a href="https://github.com/omryarad/KeySwitch">GitHub</a>
+      <a href="https://github.com/omryarad/KeySwitch/releases">כל הגרסאות ו־checksums</a>
+      <a href="https://github.com/omryarad/KeySwitch/blob/main/PRIVACY.md">מדיניות פרטיות</a>
+      <a href="https://github.com/omryarad/KeySwitch/blob/main/TERMS.md">תנאי שימוש</a>
+    </nav>
+    <p>© 2026 Omry Arad</p>
+  </footer>
+</div>
+</body>
+</html>

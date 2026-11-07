@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download KeySwitch</title>
+<meta name="description" content="Download KeySwitch: fix text typed in the wrong keyboard layout, Hebrew ⇄ English. For Mac and Windows (beta).">
+<link rel="icon" href="assets/icon.png">
+<link rel="alternate" hreflang="he" href="he/">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="lang"><a href="he/" lang="he" hreflang="he">עברית</a></div>
+  <header class="top">
+    <img class="icon" src="assets/icon.png" alt="" width="88" height="88">
+    <h1>Download KeySwitch</h1>
+    <p class="tagline">Typed in the wrong keyboard layout? Select the text, press one shortcut, and KeySwitch fixes it in place: Hebrew ⇄ English.</p>
+    <p class="pick">Choose your computer:</p>
+  </header>
+
+  <main>
+    <div class="cards">
+      <section class="card" aria-labelledby="mac">
+        <div class="badges"><span class="badge">Beta 2.1</span><span class="badge">Apple Silicon and Intel</span></div>
+        <h2 id="mac">KeySwitch for Mac</h2>
+        <p class="sub">For any Mac with macOS 13 or later.</p>
+        <a class="btn" href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg">Download for Mac</a>
+        <p class="file">KeySwitch-0.2.1.dmg · DMG installer</p>
+        <h3>Install</h3>
+        <ol>
+          <li>Open the downloaded DMG.</li>
+          <li>Drag <b>KeySwitch</b> onto <b>Applications</b>.</li>
+          <li>Open KeySwitch from Applications and follow the short welcome guide (it asks for Accessibility access).</li>
+          <li>Select text and press <kbd>⇧⌘J</kbd>.</li>
+        </ol>
+        <p class="req">Signed and notarized by Apple. Updates itself automatically. <a href="https://github.com/omryarad/KeySwitch/blob/main/INSTALL.md">Full instructions</a></p>
+      </section>
+
+      <section class="card recommended" aria-labelledby="win-x64">
+        <div class="badges"><span class="badge rec">Most Windows PCs</span><span class="badge beta">Beta</span></div>
+        <h2 id="win-x64">KeySwitch for Windows</h2>
+        <p class="sub"><b>Intel / AMD</b> processors (x64). Choose this if you're not sure.</p>
+        <a class="btn" href="https://github.com/omryarad/KeySwitch/releases/download/windows-v0.1.0-beta.2/KeySwitch-0.1.0-beta.2-windows-x64-setup.exe">Download for Windows (Intel / AMD)</a>
+        <p class="file">KeySwitch-0.1.0-beta.2-windows-x64-setup.exe · EXE installer</p>
+        <h3>Install</h3>
+        <ol>
+          <li>Open the downloaded file.</li>
+          <li>Windows warns "Windows protected your PC" because this beta isn't signed yet: click <b>More info</b>, then <b>Run anyway</b>.</li>
+          <li>Setup installs KeySwitch for your user only, no administrator rights.</li>
+          <li>Select text and press <kbd>Ctrl+Shift+J</kbd>. KeySwitch lives in the ⇄ icon next to the clock.</li>
+        </ol>
+        <p class="req">Windows 10 (1809 or later) or Windows 11. Experimental beta, not code-signed. <a href="https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.2">Release notes</a></p>
+      </section>
+
+      <section class="card" aria-labelledby="win-arm">
+        <div class="badges"><span class="badge">Windows on ARM</span><span class="badge beta">Beta</span></div>
+        <h2 id="win-arm">KeySwitch for Windows</h2>
+        <p class="sub"><b>ARM / Snapdragon</b> processors (ARM64), for example Copilot+ PCs with Snapdragon or Surface Pro X.</p>
+        <a class="btn" href="https://github.com/omryarad/KeySwitch/releases/download/windows-v0.1.0-beta.2/KeySwitch-0.1.0-beta.2-windows-arm64-setup.exe">Download for Windows (ARM / Snapdragon)</a>
+        <p class="file">KeySwitch-0.1.0-beta.2-windows-arm64-setup.exe · EXE installer</p>
+        <h3>Install</h3>
+        <ol>
+          <li>Open the downloaded file.</li>
+          <li>At "Windows protected your PC", click <b>More info</b>, then <b>Run anyway</b> (the beta isn't signed yet).</li>
+          <li>Setup installs KeySwitch for your user only, no administrator rights.</li>
+          <li>Select text and press <kbd>Ctrl+Shift+J</kbd>.</li>
+        </ol>
+        <p class="req">Windows 11 on ARM, or Windows 10 on ARM (1809 or later). Experimental beta, not code-signed. <a href="https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.2">Release notes</a></p>
+      </section>
+    </div>
+
+    <section class="help" aria-labelledby="which">
+      <h2 id="which">Which Windows version do I need?</h2>
+      <p>Open <b>Settings → System → About</b> and look at <b>System type</b>: "x64-based processor" means <b>Intel / AMD</b>; "ARM-based processor" means <b>ARM / Snapdragon</b>. Most PCs are Intel / AMD.</p>
+    </section>
+
+    <div class="notice" role="note">
+      <b>KeySwitch for Windows is an experimental beta.</b> It's not code-signed yet, so Windows and some antivirus programs may warn you, and it doesn't work in every app yet. When a conversion fails, your original text stays as it was. Please <a href="https://github.com/omryarad/KeySwitch/issues/new?template=bug_report.yml">report anything that doesn't work</a>.
+    </div>
+
+    <section class="help" aria-labelledby="privacy">
+      <h2 id="privacy">Private by design</h2>
+      <p>Conversion happens on your computer and your text never leaves it. No account. Details, including the optional usage statistics: <a href="https://github.com/omryarad/KeySwitch/blob/main/PRIVACY.md">Privacy Policy</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Links">
+      <a href="https://github.com/omryarad/KeySwitch/issues/new?template=bug_report.yml">Report a Bug</a>
+      <a href="https://github.com/omryarad/KeySwitch/issues/new?template=feature_request.yml">Suggest a Feature</a>
+      <a href="https://github.com/omryarad/KeySwitch">GitHub</a>
+      <a href="https://github.com/omryarad/KeySwitch/releases">All versions and checksums</a>
+      <a href="https://github.com/omryarad/KeySwitch/blob/main/PRIVACY.md">Privacy Policy</a>
+      <a href="https://github.com/omryarad/KeySwitch/blob/main/TERMS.md">Terms of Use</a>
+    </nav>
+    <p>© 2026 Omry Arad</p>
+  </footer>
+</div>
+</body>
+</html>

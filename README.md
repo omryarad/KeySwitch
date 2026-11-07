@@ -6,16 +6,21 @@
 
 <p align="center">
   <b>Fix text typed in the wrong keyboard layout: Hebrew ⇄ English, in place, with one shortcut.</b><br>
-  A small, private menu bar utility for macOS.
+  A small, private utility for macOS, and now for Windows (beta).
 </p>
 
-<p align="center">
-  <a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg"><b>⬇️ Download KeySwitch Beta 2.1 for Mac (DMG)</b></a><br>
-  <sub>macOS 13 or later · Apple Silicon and Intel · signed and notarized by Apple · updates itself automatically</sub>
-</p>
+## Download KeySwitch
+
+| Your computer | Download | |
+|---|---|---|
+| 🍎 **Mac**<br><sub>macOS 13 or later · Apple Silicon and Intel</sub> | **[⬇️ Download for Mac (DMG)](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)**<br><sub>`KeySwitch-0.2.1.dmg` · signed and notarized by Apple · updates itself</sub> | Beta 2.1 |
+| 🪟 **Windows · Intel / AMD**<br><sub>most Windows PCs · Windows 10 1809+ or 11</sub> | **[⬇️ Download for Windows, Intel / AMD (EXE)](https://github.com/omryarad/KeySwitch/releases/download/windows-v0.1.0-beta.2/KeySwitch-0.1.0-beta.2-windows-x64-setup.exe)**<br><sub>`KeySwitch-0.1.0-beta.2-windows-x64-setup.exe`</sub> | **Beta** · experimental |
+| 🪟 **Windows · ARM / Snapdragon**<br><sub>Windows on ARM, e.g. Copilot+ PCs with Snapdragon</sub> | **[⬇️ Download for Windows, ARM / Snapdragon (EXE)](https://github.com/omryarad/KeySwitch/releases/download/windows-v0.1.0-beta.2/KeySwitch-0.1.0-beta.2-windows-arm64-setup.exe)**<br><sub>`KeySwitch-0.1.0-beta.2-windows-arm64-setup.exe`</sub> | **Beta** · experimental |
+
+Not sure which one? See the **[downloads page](https://omryarad.github.io/KeySwitch/)** ([בעברית](https://omryarad.github.io/KeySwitch/he/)) with simple install steps. Windows: *Settings → System → About → System type* says "x64" (Intel / AMD) or "ARM". The Windows beta isn't code-signed yet, so Windows shows a warning when you install it ([release notes](https://github.com/omryarad/KeySwitch/releases/tag/windows-v0.1.0-beta.2)).
 
 <p align="center">
-  <a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg">⬇️ Download</a> ·
+  <a href="https://omryarad.github.io/KeySwitch/">⬇️ Downloads</a> ·
   <a href="../../issues/new?template=bug_report.yml">🐞 Report a Bug</a> ·
   <a href="../../issues/new?template=feature_request.yml">💡 Request a Feature</a> ·
   <a href="../../discussions/categories/q-a">❓ Ask a Question</a> ·
@@ -111,7 +116,13 @@ KeySwitch is free to use. It's proprietary software: the source code is not publ
 
 **KeySwitch מתקנת טקסט שהוקלד בפריסת המקלדת הלא נכונה, בין עברית לאנגלית, במקום ובלחיצת קיצור אחת.**
 
-<p align="center"><a href="https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg"><b>⬇️ הורדת KeySwitch Beta 2.1 ל־Mac ‏(DMG)</b></a></p>
+### הורדה
+
+- 🍎 **Mac** (macOS 13 ומעלה, Apple Silicon ו־Intel): **[⬇️ הורדה ל־Mac ‏(DMG)](https://github.com/omryarad/KeySwitch/releases/download/v0.2.1-beta/KeySwitch-0.2.1.dmg)**, בטא 2.1
+- 🪟 **Windows, מעבדי Intel / AMD** (רוב המחשבים): **[⬇️ הורדה ל־Windows ‏(Intel / AMD)](https://github.com/omryarad/KeySwitch/releases/download/windows-v0.1.0-beta.2/KeySwitch-0.1.0-beta.2-windows-x64-setup.exe)**, בטא ניסיונית
+- 🪟 **Windows, מעבדי ARM / Snapdragon**: **[⬇️ הורדה ל־Windows ‏(ARM / Snapdragon)](https://github.com/omryarad/KeySwitch/releases/download/windows-v0.1.0-beta.2/KeySwitch-0.1.0-beta.2-windows-arm64-setup.exe)**, בטא ניסיונית
+
+לא בטוחים מה לבחור? **[עמוד ההורדות](https://omryarad.github.io/KeySwitch/he/)** מסביר בפשטות. הבטא ל־Windows עדיין לא חתומה דיגיטלית, ולכן Windows מציג אזהרה בהתקנה.
 
 הקלדתם `akuo` כשהתכוונתם ל־`שלום`? מסמנים את הטקסט, לוחצים <bdi>⇧⌘J</bdi>, והטקסט מומר לפריסה הנכונה בדיוק במקום שבו הוא נמצא. הסמן עומד מיד אחרי הטקסט המומר, והמקלדת עוברת לשפה שלו, כך שאפשר להמשיך להקליד.
 
